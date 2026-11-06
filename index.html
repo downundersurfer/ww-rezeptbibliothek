@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Persönliche Rezeptbibliothek mit Rezepten zum Import in WeightWatchers.">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Meine Rezeptbibliothek</title>
+  <style>
+    :root{--ink:#20251f;--muted:#687067;--paper:#f7f5ef;--card:#fff;--green:#315b43;--line:#e5e7df}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+    header{padding:42px 20px 30px;background:#e8eee5;border-bottom:1px solid var(--line)}
+    .wrap{max-width:900px;margin:auto;padding:0 20px}h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.05;margin:0 0 12px;letter-spacing:-.04em}
+    .eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;font-weight:700;color:var(--green)}
+    .intro{max-width:620px;color:#465047;margin:0}
+    main{padding:32px 20px 60px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 5px 20px #2633220a}
+    .card-body{padding:20px}.tag{display:inline-block;background:#edf2eb;color:var(--green);padding:4px 9px;border-radius:99px;font-size:.75rem;font-weight:700}
+    h2{font-size:1.35rem;line-height:1.2;margin:12px 0 8px}.meta{color:var(--muted);font-size:.9rem}
+    a.button{display:inline-block;margin-top:16px;background:var(--green);color:white;text-decoration:none;padding:10px 15px;border-radius:10px;font-weight:650}
+    .note{margin-top:28px;padding:18px;border:1px solid var(--line);border-radius:14px;color:var(--muted);font-size:.9rem;background:#ffffff90}
+    footer{padding:20px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
+  </style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="eyebrow">Dein persönliches Rezeptbuch</div>
+  <h1>Einfach gut essen.</h1>
+  <p class="intro">Rezepte mit klaren Zutatenmengen und strukturierten Rezeptdaten. Öffne ein Rezept und kopiere dessen URL in WeightWatchers, um den Import zu testen.</p>
+</div></header>
+<main class="wrap">
+  <div class="grid">
+    <article class="card">
+      <div class="card-body">
+        <span class="tag">Hauptgericht · 4 Portionen</span>
+        <h2>Kung Pao Chicken</h2>
+        <p class="meta">Hähnchen, knackiges Gemüse und würzige Hoisin-Sauce. Mit Reis serviert.</p>
+        <a class="button" href="recipes/kung-pao-chicken.html">Rezept ansehen</a>
+      </div>
+    </article>
+  </div>
+  <aside class="note"><strong>Hinweis zum WeightWatchers-Import:</strong> Diese Seite enthält strukturierte Schema.org-Rezeptdaten. Ob WeightWatchers die Seite und alle Zutaten korrekt erkennt, muss in der App praktisch getestet werden. Die Points werden von WeightWatchers berechnet und sind hier nicht vorgegeben.</aside>
+</main>
+<footer>Private Rezeptbibliothek · Weitere Rezepte können als einzelne HTML-Seiten ergänzt werden.</footer>
+</body>
+</html>
